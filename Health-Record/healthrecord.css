@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 30px;
+  background-color: #f0fef5;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.record-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+}
+
+h1 {
+  text-align: center;
+  color: #2e8b57;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input, form button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form input[type="file"] {
+  border: none;
+}
+
+form button {
+  background-color: #2e8b57;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+form button:hover {
+  background-color: #246b44;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #d0f5df;
+  color: #2e8b57;
+}
+
+.message {
+  color: green;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - MedQuora</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+
+    <div class="contact-details">
+      <div class="contact-item">
+        <strong>📞 Landline:</strong>
+        <span class="copy-text" onclick="copyText('1800-123-4567')">1800-123-4567</span>
+      </div>
+      <div class="contact-item">
+        <strong>📱 Mobile:</strong>
+        <span class="copy-text" onclick="copyText('+91-9876543210')">+91-9876543210</span>
+      </div>
+      <div class="contact-item">
+        <strong>📧 Email:</strong>
+        <span class="copy-text" onclick="copyText('support@medquora.com')">support@medquora.com</span>
+      </div>
+    </div>
+
+    <h2>Send Us a Message</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="formMessage" class="form-message"></p>
+  </div>
+
+  <script src="contact.js"></script>
+</body>
+</html>

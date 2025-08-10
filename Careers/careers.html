@@ -1,0 +1,59 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Careers - MedQuora</title>
+  <link rel="stylesheet" href="careers.css" />
+</head>
+<body>
+  <header class="careers-header">
+    <h1>Join Our Team</h1>
+    <p>Explore exciting career opportunities at MedQuora.</p>
+  </header>
+
+  <main class="careers-content">
+    <section class="job-listings">
+      <h2>Open Positions</h2>
+      <ul>
+        <li onclick="applyNow('Frontend Developer')">
+          <strong>Frontend Developer</strong> - React, HTML, CSS
+        </li>
+        <li onclick="applyNow('Backend Developer')">
+          <strong>Backend Developer</strong> - Node.js, MongoDB
+        </li>
+        <li onclick="applyNow('UI/UX Designer')">
+          <strong>UI/UX Designer</strong> - Figma, Adobe XD
+        </li>
+        <li onclick="applyNow('Medical Advisor')">
+          <strong>Medical Advisor</strong> - MBBS/BDS/BHMS/BAMS
+        </li>
+      </ul>
+    </section>
+
+    <section class="application-form" id="applicationSection">
+      <h2>Apply Now</h2>
+      <form id="jobForm" onsubmit="return submitApplication()">
+        <input type="hidden" id="jobRole" />
+
+        <label for="fullName">Full Name *</label>
+        <input type="text" id="fullName" required />
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" required />
+
+        <label for="resume">Resume Link (Google Drive/Dropbox) *</label>
+        <input type="url" id="resume" required />
+
+        <label for="message">Why do you want to join us? *</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Submit Application</button>
+        <p id="applySuccess" class="success-msg"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="careers.js"></script>
+</body>
+</html>

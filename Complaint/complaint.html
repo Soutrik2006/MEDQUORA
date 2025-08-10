@@ -1,0 +1,36 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Complaint Form - MedQuora</title>
+  <link rel="stylesheet" href="complaint.css" />
+</head>
+<body>
+  <header class="complaint-header">
+    <h1>Customer Complaint Form</h1>
+    <p>Your feedback helps us improve. Please submit your concern below.</p>
+  </header>
+
+  <section class="complaint-section">
+    <form id="complaintForm" onsubmit="return submitComplaint()">
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" required />
+
+      <label for="subject">Complaint Subject *</label>
+      <input type="text" id="subject" required />
+
+      <label for="message">Complaint Details *</label>
+      <textarea id="message" rows="6" required></textarea>
+
+      <button type="submit">Submit Complaint</button>
+      <p id="complaintSuccess" class="success-msg"></p>
+    </form>
+  </section>
+
+  <script src="complaint.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Health Records | MedQuora</title>
+  <link rel="stylesheet" href="healthrecord.css" />
+</head>
+<body>
+
+  <div class="record-container">
+    <h1>📁 My Health Records</h1>
+
+    <form id="recordForm">
+      <input type="text" id="recordName" placeholder="Enter Record Title (e.g. Blood Report)" required />
+      <input type="date" id="recordDate" required />
+      <input type="file" id="recordFile" required />
+      <button type="submit">Upload</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Date</th>
+          <th>File</th>
+        </tr>
+      </thead>
+      <tbody id="recordTableBody">
+        <!-- Records will be displayed here -->
+      </tbody>
+    </table>
+
+    <p id="successMessage" class="message"></p>
+  </div>
+
+  <script src="healthrecord.js"></script>
+</body>
+</html>

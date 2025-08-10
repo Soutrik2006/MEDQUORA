@@ -1,0 +1,72 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.lab-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #2e8b57;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#searchInput {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.lab-test-list {
+  list-style: none;
+  padding: 0;
+}
+
+.lab-test-list li {
+  background-color: #e6ffee;
+  padding: 15px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border-left: 5px solid #2e8b57;
+  transition: 0.3s ease;
+}
+
+.lab-test-list li:hover {
+  background-color: #d1f0e2;
+  cursor: pointer;
+}
+
+
+button{
+    background-color: green;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    height: 45px;
+    margin-left: 180px;
+    cursor: pointer;
+    font-size: larger;
+}
+
+button:hover{
+  background-color: rgb(67, 147, 43);
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}

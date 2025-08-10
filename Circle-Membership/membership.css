@@ -1,0 +1,87 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5fdf9;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.membership-container {
+  max-width: 1000px;
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #2e8b57;
+}
+
+.subtitle {
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.plan-card {
+  background-color: #eaffea;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 5px solid #2e8b57;
+  transition: 0.3s ease;
+}
+
+.plan-card:hover {
+  background-color: #d2f4d2;
+}
+
+.plan-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2e8b57;
+}
+
+.plan-price {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.plan-features {
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.plan-features li {
+  margin: 5px 0;
+}
+
+.join-btn {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.join-btn:hover {
+  background-color: #246a45;
+}
+
+.message {
+  margin-top: 25px;
+  color: green;
+  font-weight: bold;
+}

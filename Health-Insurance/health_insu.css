@@ -1,0 +1,67 @@
+  body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 40px;
+  background: #f2fef5;
+  display: flex;
+  justify-content: center;
+}
+
+.insurance-container {
+  max-width: 1000px;
+  width: 100%;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2e8b57;
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.plan-card {
+  background-color: #eaffea;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 5px solid #2e8b57;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.plan-card:hover {
+  background-color: #d4fadd;
+}
+
+.plan-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.plan-provider {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.plan-coverage {
+  font-size: 14px;
+  color: #333;
+}
