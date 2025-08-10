@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Security - MedQuora</title>
+  <link rel="stylesheet" href="security.css" />
+</head>
+<body>
+  <header class="security-header">
+    <h1>Our Commitment to Security</h1>
+    <p>Your personal and health data is safe with us.</p>
+  </header>
+
+  <main class="security-content">
+    <section class="security-section">
+      <h2 onclick="toggleSection(this)">1. Data Encryption</h2>
+      <div class="section-body">
+        <p>All personal and health data is encrypted using 256-bit SSL encryption during transmission and at rest on our servers.</p>
+      </div>
+    </section>
+
+    <section class="security-section">
+      <h2 onclick="toggleSection(this)">2. Secure Login & Authentication</h2>
+      <div class="section-body">
+        <p>We use secure authentication practices such as OTPs, password hashing, and session timeouts to ensure only you can access your account.</p>
+      </div>
+    </section>
+
+    <section class="security-section">
+      <h2 onclick="toggleSection(this)">3. Data Access Control</h2>
+      <div class="section-body">
+        <p>Only authorized personnel have access to your information. All data access is logged and monitored for unusual activity.</p>
+      </div>
+    </section>
+
+    <section class="security-section">
+      <h2 onclick="toggleSection(this)">4. Third-Party Compliance</h2>
+      <div class="section-body">
+        <p>Our partnered labs, doctors, and service providers comply with HIPAA and local privacy regulations to ensure continued data safety.</p>
+      </div>
+    </section>
+
+    <section class="security-section">
+      <h2 onclick="toggleSection(this)">5. Report a Security Issue</h2>
+      <div class="section-body">
+        <p>If you believe you’ve found a vulnerability in our system, please contact our security team at <a href="mailto:security@medquora.com">security@medquora.com</a>.</p>
+      </div>
+    </section>
+
+    <div class="back-top">
+      <button onclick="scrollToTop()">⬆ Back to Top</button>
+    </div>
+  </main>
+
+  <script src="security.js"></script>
+</body>
+</html>

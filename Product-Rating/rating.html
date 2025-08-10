@@ -1,0 +1,39 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rate a Product - MedQuora</title>
+  <link rel="stylesheet" href="rating.css" />
+</head>
+<body>
+  <header class="rating-header">
+    <h1>Rate a Product</h1>
+    <p>Your feedback helps us improve quality.</p>
+  </header>
+
+  <main class="rating-content">
+    <form id="ratingForm" onsubmit="return submitRating()">
+      <label for="product">Product Name *</label>
+      <input type="text" id="product" required />
+
+      <label for="stars">Your Rating *</label>
+      <div class="star-rating" id="stars">
+        <span class="star" onclick="setRating(1)">★</span>
+        <span class="star" onclick="setRating(2)">★</span>
+        <span class="star" onclick="setRating(3)">★</span>
+        <span class="star" onclick="setRating(4)">★</span>
+        <span class="star" onclick="setRating(5)">★</span>
+      </div>
+
+      <label for="review">Your Review *</label>
+      <textarea id="review" rows="5" required></textarea>
+
+      <button type="submit">Submit Rating</button>
+      <p id="ratingSuccess" class="success-msg"></p>
+    </form>
+  </main>
+
+  <script src="rating.js"></script>
+</body>
+</html>

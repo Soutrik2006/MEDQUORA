@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #d9f3e7;
+}
+
+header {
+  background-color: #005c35;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+#search-box {
+  padding: 10px;
+  width: 400px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  
+}
+
+#suggestions {
+  position: absolute;
+  background-color: white;
+  width: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  font-size: 14px;
+}
+
+.suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+main {
+  padding: 30px;
+}
+
+.medicine-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #005c35;
+}
+
+.card p {
+  font-size: 14px;
+  color: rgb(12, 161, 12);
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #003d23;
+  color: white;
+  font-size: 14px;
+  margin-top: 10%;
+}
+
+
+.states-section {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #7ea396;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.states-section h2 {
+    font-size: 24px;
+    color: #004d40;
+    margin-bottom: 20px;
+}
+
+.states-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.states-list li {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-weight: 500;
+    color: #333;
+}

@@ -1,0 +1,50 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment - MedQuora</title>
+  <link rel="stylesheet" href="payment.css" />
+</head>
+<body>
+  <header class="payment-header">
+    <h1>Secure Payment</h1>
+    <p>Choose your preferred method to complete the purchase.</p>
+  </header>
+
+  <main class="payment-content">
+    <form id="paymentForm" onsubmit="return submitPayment()">
+      <label for="amount">Amount (₹)</label>
+      <input type="number" id="amount" required min="1" value="999" />
+
+      <label>Payment Method</label>
+      <div class="payment-options">
+        <label><input type="radio" name="paymode" value="Card" checked /> Credit/Debit Card</label>
+        <label><input type="radio" name="paymode" value="UPI" /> UPI</label>
+        <label><input type="radio" name="paymode" value="COD" /> Cash on Delivery</label>
+      </div>
+
+      <div id="cardSection">
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" maxlength="16" pattern="\d{16}" placeholder="XXXX XXXX XXXX XXXX" />
+
+        <label for="expiry">Expiry Date</label>
+        <input type="month" id="expiry" />
+
+        <label for="cvv">CVV</label>
+        <input type="password" id="cvv" maxlength="3" pattern="\d{3}" />
+      </div>
+
+      <div id="upiSection" style="display: none;">
+        <label for="upi">UPI ID</label>
+        <input type="text" id="upi" placeholder="example@upi" />
+      </div>
+
+      <button type="submit">Pay Now</button>
+      <p id="paymentMessage" class="success-msg"></p>
+    </form>
+  </main>
+
+  <script src="payment.js"></script>
+</body>
+</html>

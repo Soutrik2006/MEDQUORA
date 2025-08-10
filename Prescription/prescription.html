@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload Prescription - MedQuora</title>
+  <link rel="stylesheet" href="prescription.css">
+</head>
+<body>
+
+  <div class="upload-container">
+    <h1>Upload Prescription</h1>
+    <p>Please upload your doctor's prescription in image or PDF format.</p>
+
+    <form id="uploadForm">
+      <label for="fileInput">Choose File:</label>
+      <input type="file" id="fileInput" accept=".jpg,.jpeg,.png,.pdf" required>
+
+      <p id="fileName">No file chosen</p>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="success-message" id="successMessage"></div>
+  </div>
+
+  <script src="prescription.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MedQuora - Pharmacy</title>
+  <link rel="stylesheet" href="pharmacy.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <h1>MedQuora Pharmacy</h1>
+      <input type="text" id="search-box" placeholder="Search medicines..." onkeyup="filterMedicines()">
+      <div id="suggestions"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="medicine-list" id="medicine-list">
+      <!-- Medicine cards will be loaded here -->
+    </section>
+  </main>
+
+  <!-- States Availability Section -->
+<div class="states-section">
+  <h2>Available In These States</h2>
+  <ul class="states-list">
+    <li>West Bengal</li>
+    <li>Maharashtra</li>
+    <li>Karnataka</li>
+    <li>Tamil Nadu</li>
+    <li>Uttar Pradesh</li>
+    <li>Delhi</li>
+    <li>Assam</li>
+    <li>Bihar</li>
+    <li>Odisha</li>
+    <li>Chhattisgarh</li>
+    <li>Andhra Pradesh</li>
+    <li>Kerala</li>
+    <li>Gujarat</li>
+    <li>Jharkhand</li>
+    <li>Punjab</li>
+    <li>Haryana</li>
+    <li>Madhya Pradesh</li>
+    <li>Meghalaya</li>
+  </ul>
+</div>
+
+  <footer>
+    <p>&copy; 2025 MedQuora. All rights reserved. Designed with care by Team MedQuora.</p>
+  </footer>
+
+  <script src="pharmacy.js"></script>
+</body>
+</html>

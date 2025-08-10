@@ -1,0 +1,77 @@
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: hsl(165, 86%, 95%);
+  color: #333;
+}
+
+.rating-header {
+  background-color: #0a573d;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.rating-content {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 12px 0 6px;
+  font-weight: 600;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 12px;
+  background-color: #00704a;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005d3c;
+}
+
+.star-rating {
+  display: flex;
+  gap: 5px;
+  font-size: 28px;
+  color: lightgray;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.star-rating .star.active {
+  color: gold;
+}
+
+.success-msg {
+  color: green;
+  font-weight: bold;
+  margin-top: 15px;
+}

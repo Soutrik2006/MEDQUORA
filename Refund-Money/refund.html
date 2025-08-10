@@ -1,0 +1,39 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Refund Request - MedQuora</title>
+  <link rel="stylesheet" href="refund.css" />
+</head>
+<body>
+  <header class="refund-header">
+    <h1>Request a Refund</h1>
+    <p>We’re here to assist you in case of a refund.</p>
+  </header>
+
+  <main class="refund-content">
+    <form id="refundForm" onsubmit="return submitRefund()">
+      <label for="orderId">Order ID *</label>
+      <input type="text" id="orderId" required />
+
+      <label for="amount">Amount Paid (₹) *</label>
+      <input type="number" id="amount" required min="1" />
+
+      <label for="reason">Reason for Refund *</label>
+      <textarea id="reason" rows="5" required></textarea>
+
+      <label for="account">Bank Account / UPI ID *</label>
+      <input type="text" id="account" required placeholder="e.g., user@upi or account number" />
+
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" required />
+
+      <button type="submit">Submit Refund Request</button>
+      <p id="refundSuccess" class="success-msg"></p>
+    </form>
+  </main>
+
+  <script src="refund.js"></script>
+</body>
+</html>

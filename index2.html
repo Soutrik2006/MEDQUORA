@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="web-page-container">
+        <section class="header">
+            <!-- upper navbar -->
+            <nav class="upper-nav">
+                <div class="bar"><i id="open" class="fa-solid fa-bars"></i></div>
+                <div class="logo">
+                    <a href="#"><img src="./Images/red_plus.jpg" alt=""></a>
+                    <p class="logo-txt"><span>M</span>ed<span>Q</span>uora</p>
+                </div>
+                <div id="side-bar" class="side-bar">
+                    <i id="close" class="fa-solid fa-xmark"></i>
+                    <h2>Menu</h2>
+                    <hr>
+                    <ul class="upper-links">
+                        <li> <a href="#">Home</a></li>
+                        <li><a onclick="aboutPage()" href="#">About</a></li>
+                        <li><a onclick="servicePage()" href="#">Services</a></li>
+                        <li><a onclick="contactPage()" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="search-container">
+
+                </div>
+                <div class="button">
+                    <div class="cart-box">
+                        <div onclick="cartPage()" class="cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+
+                        <div onclick="cartPage()" class="cart-text">
+                            Cart
+                        </div>
+                    </div>
+                    <!-- Login -->
+
+                    <div class="login-box">
+                        <div onclick="loginpage()" class="login-icon">
+                            <i class="fa-solid fa-circle-user"></i>
+                        </div>
+                        <div class="login-text">
+                            <button onclick="loginPage()" id="btn-log">Login</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- lower navbar -->
+
+            </nav>
+            <nav class="lower-nav">
+                <ul class="lower-links">
+                    <li><a onclick="findDoctor()" href="#">Find Doctor</a></li>
+                    <li><a onclick="healthrecord()" href="#">Health Records</a></li>
+                    <li><a onclick="navLabtest()" href="#">Lab Tests</a></li>
+                    <li> <a onclick="HealthEssentials()" href="#">Health Essentials</a></li>
+                    <li><a onclick="circleMembership()" href="#">Circle Membership</a></li>
+                    <li><a onclick="PersonalCare()" href="#">Personal Care</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Hero Section -->
+
+        <section class="Hero">
+            <div class="images slider-wrapper">
+                <div class="slider">
+                    <div class="image image1"><img id="injection-img" src="Images/Injection.avif" alt="capsules"></div>
+                    <div class="image image2"><img id="company-img" src="Images/watermark.jpeg" alt="Company Image">
+                    </div>
+                    <div class="image image3"><img id="doctor-img" src="Images/doctor2.webp" alt="Doctor"></div>
+                </div>
+                <div class="slider-nav">
+                    <a href="#injection-img"></a>
+                    <a href="#company-img"></a>
+                    <a href="#doctor-img"></a>
+                </div>
+            </div>
+            <div class="Hero-heading">
+
+                <h1><b><u>Buy Medicines and Essentials</u></b></h1>
+
+            </div>
+            <div class="search-container">
+                <!-- <button onclick="emergencyPage()" id="btn-emr">+ Emergency +</button> -->
+                <div class="search-bar">
+
+                    <input id="search-input" type="text" placeholder="    Search Medicines...">
+                    <i id="mag-icon" class="fa-solid fa-magnifying-glass"></i>
+
+                </div>
+
+                <!-- <button onclick="presPage()" id="btn-prep">Upload Prescription</button> -->
+
+
+            </div>
+            <div class="health-options">
+                <div onclick="pharmacyPage()" id="opt1" class="option">
+                    Pharmacy
+                    <div class="h-icon">
+                        <i class="fa-solid fa-house-medical"></i>
+                    </div>
+                </div>
+
+                <div onclick="health_insuPage()" id="opt2" class="option">
+                    Health Insurance
+                    <div class="h-icon">
+                        <i class="fa-solid fa-square-plus"></i>
+                    </div>
+                </div>
+                <div onclick="doctor_appoPage()" id="opt3" class="option">
+                    Doctor Appointment
+                    <div class="h-icon">
+                        <i class="fa-solid fa-user-nurse"></i>
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+
+                </div>
+                <div onclick="LabTestPage()" id="opt4" class="option">
+                    Lab Tests
+                    <div class="h-icon">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="products">
+            <div class="heading">
+                <h1>
+                    <u>Browse Products</u>
+                </h1>
+            </div>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="Images/Paracetamol.jpg" alt="Paracitamol">
+                    <div class="product-info">
+                        <p class="product-name">Sinarest</p>
+                        <p class="product-price">₹50.00</p>
+                    </div>
+
+                    <div class="sell-btn">
+                        <button id="buy">Buy Now</button>
+                        <button id="add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="Images/vitamin-e.webp" alt="Vit E">
+                    <div class="product-info">
+                        <p class="product-name">Vitamin E</p>
+                        <p class="product-price">₹170.00</p>
+                    </div>
+
+                    <div class="sell-btn">
+                        <button id="buy">Buy Now</button>
+                        <button id="add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="Images/Detol.jpg" alt="Detol Liqiud">
+                    <div class="product-info">
+                        <p class="product-name">Detol</p>
+                        <p class="product-price">₹199.00</p>
+                    </div>
+
+                    <div class="sell-btn">
+                        <button id="buy">Buy Now</button>
+                        <button id="add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="Images/Tetvac.jpg" alt="Tetvac">
+                    <div class="product-info">
+                        <p class="product-name">Tetvac</p>
+                        <p class="product-price">₹100.00</p>
+                    </div>
+
+                    <div class="sell-btn">
+                        <button id="buy">Buy Now</button>
+                        <button id="add-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="Images/TNL.jpg" alt="TNL">
+                    <div class="product-info">
+                        <p class="product-name">TNL</p>
+                        <p class="product-price">₹120.00</p>
+                    </div>
+
+                    <div class="sell-btn">
+                        <button id="buy">Buy Now</button>
+                        <button id="add-cart">Add to Cart</button>
+                    </div>
+
+                </div>
+                <div class="product-item">
+                    <img src="Images/himoglobin.jpeg" alt="Himoglobin">
+                    <div class="product-info">
+                        <p class="product-name">Himoglobin</p>
+                        <p class="product-price">₹120.00</p>
+                    </div>
+
+                    <div class="sell-btn">
+                        <button id="buy">Buy Now</button>
+                        <button id="add-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="Images/Co-vaccine.jpeg" alt="Covid-19 Vaccine">
+                    <div class="product-info">
+                        <p class="product-name">Co-Vaccine</p>
+                        <p class="product-price">₹600.00</p>
+                    </div>
+
+                    <div class="sell-btn">
+                        <button id="buy">Buy Now</button>
+                        <button id="add-cart">Add to Cart</button>
+                    </div>
+
+                </div>
+                <div class="product-item">
+                    <img src="Images/Antibiotic.jpg" alt="Antibiotic">
+                    <div class="product-info">
+                        <p class="product-name">Antibiotic</p>
+                        <p class="product-price">₹750.00</p>
+                    </div>
+
+                    <div class="sell-btn">
+                        <button id="buy">Buy Now</button>
+                        <button id="add-cart">Add to Cart</button>
+                    </div>
+
+                </div>
+                <div class="product-item">
+                    <img src="./Images/Glue Forming.jpg" alt="TNL">
+                    <div class="product-info">
+                        <p class="product-name">TNL</p>
+                        <p class="product-price">₹120.00</p>
+                    </div>
+
+                    <div class="sell-btn">
+                        <button id="buy">Buy Now</button>
+                        <button id="add-cart">Add to Cart</button>
+                    </div>
+
+                </div>
+                <div class="product-item">
+                    <img src="./Images/Magenesium Tablets.jpg" alt="TNL">
+                    <div class="product-info">
+                        <p class="product-name">TNL</p>
+                        <p class="product-price">₹120.00</p>
+                    </div>
+
+                    <div class="sell-btn">
+                        <button id="buy">Buy Now</button>
+                        <button id="add-cart">Add to Cart</button>
+                    </div>
+
+                </div>
+                <div class="product-item">
+                    <img src="Images/Paracetamol.jpg" alt="TNL">
+                    <div class="product-info">
+                        <p class="product-name">TNL</p>
+                        <p class="product-price">₹120.00</p>
+                    </div>
+
+                    <div class="sell-btn">
+                        <button id="buy">Buy Now</button>
+                        <button id="add-cart">Add to Cart</button>
+                    </div>
+
+                </div>
+                <div class="product-item">
+                    <img src="Images/Dolonex.jpg" alt="TNL">
+                    <div class="product-info">
+                        <p class="product-name">TNL</p>
+                        <p class="product-price">₹120.00</p>
+                    </div>
+
+                    <div class="sell-btn">
+                        <button id="buy">Buy Now</button>
+                        <button id="add-cart">Add to Cart</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="medical-fecilities">
+            <!-- Medical Facilities -->
+            <div class="heading">
+                <h1 id="Brow-by-health">Browse by Health Conditions</h1>
+            </div>
+
+            <div class="browse">
+
+                <div class="health-condition">
+                    <div class="cond">
+                        <div onclick="DiabetesCarePage()" class="txt">Diabetes Care
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+                    <div class="cond">
+                        <div onclick="CardiacCarePage()" class="txt">
+                            Cardiac Care
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+                    <div class="cond">
+                        <div onclick="StomachCarePage()" class="txt">
+
+                            Stomach Care
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+                    <div class="cond">
+                        <div onclick="LiverCarePage()" class="txt">
+                            Liver Care
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+                    <div class="cond">
+                        <div onclick="oralCarePage()" class="txt">
+                            Dental Care
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+                    <div class="cond">
+                        <div onclick="respiratoryPage()" class="txt">
+                            Respiratory Care
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+                    <div class="cond">
+                        <div onclick="painPage()" class="txt">
+                            Pain Relief Care
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+                    <div class="cond">
+                        <div onclick="sexualhealthPage()" class="txt">
+                            Sexual Health
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Company Branding & Advertisement Section -->
+        <section class="advertisement-container">
+            <!-- Top Banner Row -->
+            <div class="branding-row">
+                <img id="brand1" src="Images/advertise.jpg" alt="company advertise" class="main-brand">
+                <img id="brand2" src="Images/adv3.jpg" alt="company advertise" class="main-brand">
+            </div>
+
+            <!-- Main Advertisement Grid -->
+            <div class="advertisement-grid">
+                <div class="image-container">
+                    <div class="adv-wrapper">
+                        <img class="adv" src="Images/adv5.webp" alt="Doctor">
+                        <span class="adv-caption">Expert Consultation</span>
+                    </div>
+
+                    <div class="adv-wrapper">
+                        <img class="adv" src="Images/adv4.webp" alt="Lab">
+                        <span class="adv-caption">Laboratory Services</span>
+                    </div>
+
+                    <div class="adv-wrapper">
+                        <img class="adv" src="Images/adv6.avif" alt="Doctor">
+                        <span class="adv-caption">Specialist Care</span>
+                    </div>
+
+                    <div class="adv-wrapper">
+                        <img class="adv" src="Images/adv8.jpg" alt="CitiScan">
+                        <span class="adv-caption">Advanced Imaging</span>
+                    </div>
+
+                    <div class="adv-wrapper">
+                        <img class="adv" src="Images/adv7.avif" alt="Medicine">
+                        <span class="adv-caption">Pharmacy</span>
+                    </div>
+
+                    <div class="adv-wrapper highlight">
+                        <img class="adv" id="plus-img" src="Images/adv9.avif" alt="Plus Logo">
+                        <span class="adv-caption">Premium Services</span>
+                    </div>
+
+                    <div class="adv-wrapper">
+                        <img class="adv" src="Images/ecg.jpg" alt="ECG">
+                        <span class="adv-caption">Cardiology</span>
+                    </div>
+
+                    <div class="adv-wrapper">
+                        <img class="adv" src="Images/corona.jpg" alt="Corona Virus">
+                        <span class="adv-caption">Infectious Disease</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video-section">
+            <h2>Safe Health Save Life</h2>
+            <!-- Video Link -->
+            <iframe src="https://www.youtube.com/embed/74DWwSxsVSs" title="Health Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </section>
+    </div>
+
+    <!-- footer section -->
+    <footer>
+        <div class="info">
+            <div class="list">
+                <h3>
+                    ABOUT
+                </h3>
+                <ul>
+                    <li onclick="contactPage()">Contact Us</li>
+                    <li onclick="aboutPage()">About Us</li>
+                    <li onclick="Careers()">Careers</li>
+                    <li onclick="Information()">Information</li>
+                    <li onclick="Rating()">Product Rating</li>
+
+                </ul>
+            </div>
+
+            <div class="list">
+                <h3>
+                    HELPLINE
+                </h3>
+                <ul>
+                    <li onclick="Payment()">Payments</li>
+                    <li onclick="Shipping()">Shipping</li>
+                    <li onclick="Return()">Return Policy</li>
+                    <li onclick="Cancellation()">Cancelation Policy</li>
+                    <li onclick="FAQ()">FAQs</li>
+                </ul>
+
+
+            </div>
+
+            <div class="list">
+                <h3>
+                    CUSTOMER POLICY
+                </h3>
+                <ul>
+                    <li onclick="RefundMoney()">Refund Money</li>
+                    <li onclick="TermsOfUse()">Terms of Use</li>
+                    <li onclick="Security()">Security</li>
+                    <li onclick="Privacy()">Privacy</li>
+                    <li onclick="Feedback()">Feedback</li>
+                    <li onclick="Complaint()">Complaint</li>
+                </ul>
+            </div>
+
+            <div class="list">
+                <h3>
+                    Head Office Address
+                </h3>
+                <a class="map" href="https://www.google.com/maps/place/IDA+Scudder+Rd,+Vellore,+Tamil+Nadu+632004/@12.9240647,79.1333052,17z/data=!3m1!4b1!4m6!3m5!1s0x3bad3894c32fede5:0x6be4f6c87a694421!8m2!3d12.9240595!4d79.1358801!16s%2Fg%2F1hjh1nb7s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank">
+                    <p id="Address_Company">
+                        IDA Scudder Road, Vellore,<br> Tamil Nadu, India, <br>Pin Code: 632004
+                    </p>
+                </a>
+
+
+            </div>
+        </div>
+
+        <div class="company-office">
+
+            <div class="call-us">
+                <h4>Call Us:</h4>
+                <li>+91-7866804803 / +91-8391995263 /+91-8391950389</li>
+
+            </div>
+
+            <div class="map-container">
+                <a href="https://www.google.com/maps/place/IDA+Scudder+Rd,+Vellore,+Tamil+Nadu+632004/@12.9240647,79.1333052,17z/data=!3m1!4b1!4m6!3m5!1s0x3bad3894c32fede5:0x6be4f6c87a694421!8m2!3d12.9240595!4d79.1358801!16s%2Fg%2F1hjh1nb7s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank">
+                    <img id="map" src="Images/Location.png" alt="Vellore Map">
+                </a>
+            </div>
+
+            <div class="mail-us">
+                <h4>Mail Us:</h4>
+                <li>
+                    <u>dipanmondal184@gmail.com</u>
+                </li>
+                <li>
+                    <u>soutrikchakraborty454@gmail.com</u>
+                </li>
+                <li>
+                    <u>techsouparna1024@gmail.com</u>
+                </li>
+            </div>
+
+
+        </div>
+        <div class="finish">
+            <p>© 2025 MedQuora. | support@medquora.com | created by @Dipan Mondal & @Soutrik Chakrabarty| contributed by @Souparna Dhara</p>
+        </div>
+
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
