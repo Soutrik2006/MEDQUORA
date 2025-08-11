@@ -537,7 +537,7 @@ body {
     margin: 5px;
     height: 5rem;
     font-weight: bolder;
-    font-size: larger;
+    font-size: clamp(10px, 24px);
     border-radius: 10px;
     background-color: #c7e0cc;
     display: flex;
@@ -558,8 +558,8 @@ body {
 }
 
 .txt{
-   margin-top: 25px;
-   margin-left: 20px;
+   margin-top: 20px;
+   margin-left: 10px;
  
 }
 
@@ -708,4 +708,5 @@ footer .map-container img{
 
 footer .company-office {
     text-align: center;
+
 }
