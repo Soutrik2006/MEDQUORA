@@ -1,0 +1,62 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ceeae2;
+}
+
+header {
+  background-color: #08502a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header input {
+  margin-top: 10px;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.doctor-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.doctor-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 220px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card h3 {
+  margin: 0 0 5px;
+  color: #00704a;
+}
+
+.doctor-card p {
+  margin: 0;
+  color: #555;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #003d23;
+  color: white;
+  font-size: 14px;
+  margin-top: 5%;
+}
