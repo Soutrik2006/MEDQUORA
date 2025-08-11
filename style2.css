@@ -537,7 +537,7 @@ body {
     margin: 5px;
     height: 5rem;
     font-weight: bolder;
-    font-size: clamp(10px, 24px);
+    font-size: 1.2rem;
     border-radius: 10px;
     background-color: #c7e0cc;
     display: flex;
@@ -548,7 +548,16 @@ body {
     /* padding: 0 1rem; */
     text-align: center;
 }
+@media screen and (max-width: 500px) {
+    .cond{
+        font-size: 0.85rem;
 
+    }
+    .txt{
+        margin-top: 10px;
+        padding-right: 11px; 
+    }
+}
 .cond:hover{
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
@@ -710,3 +719,4 @@ footer .company-office {
     text-align: center;
 
 }
+
